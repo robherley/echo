@@ -5,7 +5,9 @@ steps:
 - name: docker
   image: plugins/docker
   settings:
-    username: $$USERNAME
-    password: $$PASSWORD
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
     repo: robherley/test-from-drone
     tags: latest
