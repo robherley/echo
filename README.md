@@ -1,5 +1,7 @@
 # test-server
 
+[![Build Status](https://drone.robherley.xyz/api/badges/robherley/test-server/status.svg)](https://drone.robherley.xyz/robherley/test-server)
+
 docker image that contains a simple golang server for quick & dirty debugging. container also has some useful tools preinstalled like curl, wget, jq, vim, dig, etc
 
 example response:
