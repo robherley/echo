@@ -1,0 +1,11 @@
+kind: pipeline
+name: default
+
+steps:
+- name: docker
+  image: plugins/docker
+  settings:
+    username: $$USERNAME
+    password: $$PASSWORD
+    repo: robherley/test-from-drone
+    tags: latest
