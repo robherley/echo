@@ -11,3 +11,7 @@ steps:
       from_secret: docker_password
     repo: robherley/test-from-drone
     tags: latest
+- name: wait
+  image: alpine
+  commands:
+  - sleep 2m
